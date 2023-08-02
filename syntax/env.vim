@@ -9,9 +9,9 @@ endif
 
 syn match  envComment				'^#.*'
 
-syn match  envVariableUnassigned		"\<\h\w*$"
+syn match  envVariableUnassigned		"^\<\h\w*$"
 
-syn match  envVariable				"\<\h\w*\ze="	nextgroup=envVarAssign
+syn match  envVariable				"^\<\h\w*\ze="	nextgroup=envVarAssign
 syn match  envVarAssign		contained	"="		nextgroup=envVar,envQuotedVarOpen,envSpace
 syn match  envVar		contained	"\h\w*"
 syn match  envSpace		contained	"\s\+"		nextgroup=envQuotedVarOpen
