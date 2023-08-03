@@ -25,7 +25,7 @@ let b:current_syntax = "env"
 
 hi def link envComment			Comment
 
-hi def link envVariableUnassigned	Underlined
+hi def link envVariableUnassigned	Error
 
 hi def link envVariable			Identifier
 hi def link envVarAssign		Operator
